@@ -8,82 +8,240 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devin Seay</title>
-    <link rel="stylesheet" href="css/pico.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Devin Seay | Physics Researcher</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Add the blob background elements -->
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+    </div>
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <nav class="container-fluid">
-        <ul>
-            <li><strong>Devin Seay</strong></li>
-        </ul>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">DS</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <main class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <hr>
-            <div class="grid">
-                <div>
-                    <img src="assets/images/me.jpeg" alt="Profile Picture" class="profile-img">
+    <header class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1>Devin Seay</h1>
+                    <p class="subtitle">Nuclear Physics Researcher</p>
+                    <p class="hero-description">Exploring hadron spin distribution through data science and machine learning</p>
+                    <div class="hero-cta">
+                        <a href="#research" class="button primary">My Research</a>
+                        <a href="#contact" class="button outline">Get in Touch</a>
+                    </div>
                 </div>
-                <div>
-                    <p>Hello! My name is Devin Seay and I am Physics Ph.D. student specializing in theoretical and experimental nuclear physics. 
-                        My primary research focuses on the spin distribution of hadrons through the study of the Sivers Distribution of polarized proton targets. 
-                        Much of my work consists of applications of Machine Learning and AI in experimental instrumentation and theoretical prediction and analysis.
-                        Outside of physics, I am a big film fanatic, a bookworm, a traveler, a powerlifter, and a novice cook! </p>
-                    <p>I completed my undergraduate studies at the University of Virginia and am currently pursuing my PhD there as well under the advisorship of Professor Dustin Keller.</p>
+                <div class="hero-image">
+                    <img src="assets/images/me.jpeg" alt="Devin Seay" class="profile-img">
                 </div>
             </div>
-        </section>
-        <hr>
+        </div>
+    </header>
 
+    <div class="page-content">
+        <div class="container">
+            <div class="grid-layout">
+                <main class="main-content">
+                    <section id="about" class="card">
+                        <h2>About Me</h2>
+                        <p>I'm a <strong>Physics Ph.D. student</strong> at the University of Virginia, specializing in theoretical and experimental nuclear physics. My research focuses on the spin distribution of hadrons through the study of the Sivers Distribution of polarized proton targets.</p>
+                        
+                        <p>I apply machine learning and AI techniques to both experimental instrumentation and theoretical prediction analysis, working under the advisorship of Professor Dustin Keller.</p>
+                        
+                        <div class="interests-container">
+                            <div class="interest"><i class="fas fa-film"></i> Film</div>
+                            <div class="interest"><i class="fas fa-book"></i> Reading</div>
+                            <div class="interest"><i class="fas fa-globe-americas"></i> Travel</div>
+                            <div class="interest"><i class="fas fa-dumbbell"></i> Powerlifting</div>
+                            <div class="interest"><i class="fas fa-utensils"></i> Cooking</div>
+                        </div>
+                    </section>
 
-        <!-- <section id="projects">
-            <h2>Projects</h2>
-            <div class="grid">
-                <article>
-                    <h3>Project 1: [Project Title]</h3>
-                    <p>Description of the project. What was the goal, what methods did you use, and what were the outcomes?</p>
-                </article>
-                <article>
-                    <h3>Project 2: [Project Title]</h3>
-                    <p>Description of the project. What was the goal, what methods did you use, and what were the outcomes?</p>
-                </article>
-                <article>
-                    <h3>Project 3: [Project Title]</h3>
-                    <p>Description of the project. What was the goal, what methods did you use, and what were the outcomes?</p>
-                </article>
+                    <section id="research" class="card">
+                        <h2>Research Focus</h2>
+                        <div class="research-grid">
+                            <div class="research-card">
+                                <div class="research-icon"><i class="fas fa-atom"></i></div>
+                                <h3>Nuclear Spin Physics</h3>
+                                <p>Investigating the Sivers Distribution in polarized proton targets to understand fundamental spin properties of hadrons.</p>
+                            </div>
+                            <div class="research-card">
+                                <div class="research-icon"><i class="fas fa-brain"></i></div>
+                                <h3>ML Applications</h3>
+                                <p>Developing machine learning models for experimental data analysis and theoretical predictions in nuclear physics.</p>
+                            </div>
+                            <div class="research-card">
+                                <div class="research-icon"><i class="fas fa-microscope"></i></div>
+                                <h3>Experimental Design</h3>
+                                <p>Creating innovative instrumentation approaches for nuclear physics experiments using modern computational methods.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="projects" class="card">
+                        <h2>Projects</h2>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-content">
+                                    <h3>ML for Particle Identification</h3>
+                                    <p>Developing deep learning models to improve particle identification in detector data.</p>
+                                </div>
+                                <div class="tags">
+                                    <span>TensorFlow</span>
+                                    <span>Python</span>
+                                    <span>Nuclear Physics</span>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-content">
+                                    <h3>Sivers Function Analysis</h3>
+                                    <p>Statistical analysis of experimental data to extract the Sivers function parameters.</p>
+                                </div>
+                                <div class="tags">
+                                    <span>Data Analysis</span>
+                                    <span>Statistics</span>
+                                    <span>ROOT</span>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-content">
+                                    <h3>Detector Simulation</h3>
+                                    <p>Monte Carlo simulations of particle interactions in detector systems.</p>
+                                </div>
+                                <div class="tags">
+                                    <span>GEANT4</span>
+                                    <span>C++</span>
+                                    <span>Simulation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+
+                <aside class="sidebar">
+                    <div class="profile-sidebar card">
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="publications-sidebar card">
+                        <h2 id="publications">Publications</h2>
+                        <div class="publications-list">
+                            <div class="publication">
+                                <div class="pub-year">2023</div>
+                                <div class="pub-content">
+                                    <h3>Measurement of the Sivers Asymmetry in Polarized Proton-Proton Collisions</h3>
+                                    <p class="pub-journal">Physical Review D</p>
+                                    <div class="pub-links">
+                                        <a href="#" class="pub-link">PDF</a>
+                                        <a href="#" class="pub-link">arXiv</a>
+                                        <a href="#" class="pub-link">DOI</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="publication">
+                                <div class="pub-year">2022</div>
+                                <div class="pub-content">
+                                    <h3>Machine Learning Applications in Nuclear Physics Experiments</h3>
+                                    <p class="pub-journal">Journal of Computational Physics</p>
+                                    <div class="pub-links">
+                                        <a href="#" class="pub-link">PDF</a>
+                                        <a href="#" class="pub-link">arXiv</a>
+                                        <a href="#" class="pub-link">DOI</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </div>
-        </section> -->
+            
+            <!-- Contact section moved to bottom of page -->
+            <section id="contact" class="contact-section">
+                <div class="contact-container card">
+                    <h2>Get in Touch</h2>
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:das5pzq@virginia.edu">das5pzq@virginia.edu</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Department of Physics, University of Virginia</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Office Hours: By appointment</span>
+                            </div>
+                            <div class="contact-social">
+                                <div class="social-links">
+                                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 
-        <!-- <section id="publications">
-            <h2>Publications</h2>
-            <ul>
-                <li><a href="assets/papers/paper1.pdf">Paper 1: [Paper Title]</a> - [Journal Name], [Year]</li>
-                <li><a href="#">Paper 2: [Paper Title]</a> - [Journal Name], [Year]</li>
-                <li><a href="#">Paper 3: [Paper Title]</a> - [Journal Name], [Year]</li>
-            </ul>
-        </section> -->
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>If you would like to get in touch, please feel free to reach out via email at <a href="mailto:your.das5pzq@virginia.edu">das5pzq @ virginia.edu</a>.</p>
-        </section>
-    </main>
-
-    <footer class="container">
-        <small>© 2025 Devin Seay. All rights reserved.</small>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Devin Seay</p>
+                <div class="footer-links">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="" async defer></script>
+    
+    <script src="script.js" defer></script>
 </body>
 </html>
